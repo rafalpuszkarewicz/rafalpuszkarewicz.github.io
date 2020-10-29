@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
-app.url_map.strict_slashes = False
+app.config["FREEZER_DESTINATION"] = "../docs"
 
 
 @app.route("/")
@@ -16,9 +16,7 @@ def about():
 
 @app.route("/services.html")
 def services():
-    return render_template("services.html"), {
-        "Content-Type": "text/html; charset=utf-8"
-    }
+    return render_template("services.html")
 
 
 if __name__ == "__main__":
