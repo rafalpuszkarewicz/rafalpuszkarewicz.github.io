@@ -20,5 +20,10 @@ def services():
     return render_template("services.html")
 
 
+@app.route("/bus.html")
+def bus():
+    return render_template("bus.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
