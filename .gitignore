@@ -1,6 +1,3 @@
 venv
 .vscode
 __pycache__
-folium-test.py
-bus-live.py
-UMAPI.py
