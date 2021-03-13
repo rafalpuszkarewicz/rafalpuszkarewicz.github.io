@@ -2,7 +2,9 @@ from flask import Flask, render_template
 
 
 app = Flask(__name__)
-app.config["FREEZER_DESTINATION"] = "docs"
+app.config[
+    "FREEZER_DESTINATION"
+] = r"D:\Python\Projects\rafalpuszkarewicz.github.io\docs"
 
 
 @app.route("/")

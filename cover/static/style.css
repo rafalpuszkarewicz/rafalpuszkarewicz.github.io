@@ -3,8 +3,13 @@ html,
 body {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  
 }
 
+body {
+  position: relative;
+  line-height: 1.6;
+}
 /* Navigation */
 
 .navbar-nav a {
@@ -13,6 +18,10 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7)
 }
 
 /* Cover  */
@@ -44,4 +53,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+
+.content {
+  padding: 55px 0;
+}
+hr.solid {
+  border-top: 3px solid #bbb;
 }
